@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using System.Diagnostics;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UIElements;
@@ -12,6 +13,7 @@ public class PatrolEnemy : MonoBehaviour
     private List<Vector3> patrolPoints = new List<Vector3>();
     private int patrolSection = 0;
     private Vector3 enemyPos;
+    private Vector3 direction;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -26,6 +28,18 @@ public class PatrolEnemy : MonoBehaviour
     void Update()
     {
         enemy.transform.position = Vector3.MoveTowards(enemy.transform.position, patrolPoints[patrolSection], moveSpeed * Time.deltaTime);
+        direction = (patrolPoints[patrolSection] - enemy.transform.position).normalized;
+
+        // Instant snap (use if you want no smoothing):
+        if (direction.sqrMagnitude > 0.0001f)
+        {
+            float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg; // right-facing sprite
+            // if sprite faces up, use: angle -= 90f;
+            angle += 90f;
+            enemy.transform.rotation = Quaternion.Euler(0f, 0f, angle);
+            UnityEngine.Debug.Log(angle);
+        }
+
         if (enemy.transform.position == patrolPoints[patrolSection])
         {
             patrolSection = (patrolSection == patrolPoints.Count - 1) ? 0 : patrolSection + 1;
