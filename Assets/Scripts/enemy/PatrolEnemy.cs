@@ -18,10 +18,13 @@ public class PatrolEnemy : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        for (int child = 0; child < gameObject.transform.childCount-1; child++)
+        for (int child = 0; child < gameObject.transform.childCount - 1; child++)
         {
             patrolPoints.Add(gameObject.transform.GetChild(child).transform.position);
+            gameObject.transform.GetChild(child).gameObject.SetActive(false);
         }
+
+        moveSpeed = Random.Range(moveSpeed * 0.8f, moveSpeed * 1.2f);
     }
 
     // Update is called once per frame
@@ -37,7 +40,6 @@ public class PatrolEnemy : MonoBehaviour
             // if sprite faces up, use: angle -= 90f;
             angle += 90f;
             enemy.transform.rotation = Quaternion.Euler(0f, 0f, angle);
-            UnityEngine.Debug.Log(angle);
         }
 
         if (enemy.transform.position == patrolPoints[patrolSection])

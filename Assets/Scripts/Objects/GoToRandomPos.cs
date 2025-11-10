@@ -5,6 +5,8 @@ public class GoToRandomPos : MonoBehaviour
     Vector3 randomPoint;
     BoundingParent ParentObject;
     public int moveSpeed = 5;
+    public bool rotateTowards = true;
+    float angle = 0;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -17,7 +19,8 @@ public class GoToRandomPos : MonoBehaviour
     {
         gameObject.transform.position = Vector3.MoveTowards(gameObject.transform.position, randomPoint, moveSpeed * Time.deltaTime);
 
-        float angle = Mathf.Atan2(randomPoint.y - gameObject.transform.position.y, randomPoint.x - gameObject.transform.position.x) * Mathf.Rad2Deg + 180;
+        angle = (rotateTowards) ? Mathf.Atan2(randomPoint.y - gameObject.transform.position.y, randomPoint.x - gameObject.transform.position.x) * Mathf.Rad2Deg + 180 : 0;
+        // angle = Random.Range(angle * 0.8, angle * 1.2f);
         Quaternion targetRotation = Quaternion.AngleAxis(angle, Vector3.forward);
         transform.rotation = Quaternion.Slerp(transform.rotation, targetRotation, moveSpeed*2 * Time.deltaTime);
 

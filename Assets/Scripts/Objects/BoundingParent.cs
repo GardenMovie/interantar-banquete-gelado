@@ -6,10 +6,10 @@ public class BoundingParent : MonoBehaviour
     [SerializeField] private GameObject prefab; // prefab to spawn
     [SerializeField] private int amountToSpawn = 5; // how many to spawn
 
-        public float leftX;
-        public float rightX;
-        public float bottomY;
-        public float topY;
+        private float leftX;
+        private float rightX;
+        private float bottomY;
+        private float topY;
 
     private void Start()
     {
