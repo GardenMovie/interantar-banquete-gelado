@@ -1,0 +1,806 @@
+fileFormatVersion: 2
+guid: 7af96ea21c33f90eb8c1b3633c098f07
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 7317239116197061770
+    second: "C\xF3pia de Algas_0"
+  - first:
+      213: -5351545191937306386
+    second: "C\xF3pia de Algas_1"
+  - first:
+      213: 7645198511599513276
+    second: "C\xF3pia de Algas_2"
+  - first:
+      213: -2856625809782527556
+    second: "C\xF3pia de Algas_3"
+  - first:
+      213: 5317307930999088721
+    second: "C\xF3pia de Algas_4"
+  - first:
+      213: 7868406919218394771
+    second: "C\xF3pia de Algas_5"
+  - first:
+      213: -8810849094666190449
+    second: "C\xF3pia de Algas_6"
+  - first:
+      213: 2107781902683143446
+    second: "C\xF3pia de Algas_7"
+  - first:
+      213: 5445811341175293274
+    second: "C\xF3pia de Algas_8"
+  - first:
+      213: -7229146319819614297
+    second: "C\xF3pia de Algas_9"
+  - first:
+      213: 4049926364126985537
+    second: "C\xF3pia de Algas_10"
+  - first:
+      213: -4953480768073871684
+    second: "C\xF3pia de Algas_11"
+  - first:
+      213: -5764825979537482150
+    second: "C\xF3pia de Algas_12"
+  - first:
+      213: -3879201476533809420
+    second: "C\xF3pia de Algas_13"
+  - first:
+      213: -1175207974186144856
+    second: "C\xF3pia de Algas_14"
+  - first:
+      213: -7971522947528315503
+    second: "C\xF3pia de Algas_15"
+  - first:
+      213: 109310082436214858
+    second: "C\xF3pia de Algas_16"
+  - first:
+      213: -6483126539395996102
+    second: "C\xF3pia de Algas_17"
+  - first:
+      213: -3704246721104073632
+    second: "C\xF3pia de Algas_18"
+  - first:
+      213: 6297712715800364459
+    second: "C\xF3pia de Algas_19"
+  - first:
+      213: 677100067950396376
+    second: "C\xF3pia de Algas_20"
+  - first:
+      213: -6374015372752844311
+    second: "C\xF3pia de Algas_21"
+  - first:
+      213: 313842357616272432
+    second: "C\xF3pia de Algas_22"
+  - first:
+      213: -6436506567983853393
+    second: "C\xF3pia de Algas_23"
+  - first:
+      213: -8241637785905913721
+    second: "C\xF3pia de Algas_24"
+  - first:
+      213: -4016246250042778123
+    second: "C\xF3pia de Algas_25"
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: "C\xF3pia de Algas_0"
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 625
+        width: 254
+        height: 423
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a84e481353e0c8560800000000000000
+      internalID: 7317239116197061770
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "C\xF3pia de Algas_1"
+      rect:
+        serializedVersion: 2
+        x: 833
+        y: 876
+        width: 79
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ee0902b600e7bb5b0800000000000000
+      internalID: -5351545191937306386
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "C\xF3pia de Algas_2"
+      rect:
+        serializedVersion: 2
+        x: 1185
+        y: 924
+        width: 31
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cbeeb315a83391a60800000000000000
+      internalID: 7645198511599513276
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "C\xF3pia de Algas_3"
+      rect:
+        serializedVersion: 2
+        x: 587
+        y: 881
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cb923b706f93b58d0800000000000000
+      internalID: -2856625809782527556
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "C\xF3pia de Algas_4"
+      rect:
+        serializedVersion: 2
+        x: 1079
+        y: 845
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1566194146fdac940800000000000000
+      internalID: 5317307930999088721
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "C\xF3pia de Algas_5"
+      rect:
+        serializedVersion: 2
+        x: 1236
+        y: 853
+        width: 32
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 396fc388762323d60800000000000000
+      internalID: 7868406919218394771
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "C\xF3pia de Algas_6"
+      rect:
+        serializedVersion: 2
+        x: 529
+        y: 838
+        width: 37
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f8189d62e6399b580800000000000000
+      internalID: -8810849094666190449
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "C\xF3pia de Algas_7"
+      rect:
+        serializedVersion: 2
+        x: 593
+        y: 816
+        width: 27
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 61dfc651978504d10800000000000000
+      internalID: 2107781902683143446
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "C\xF3pia de Algas_8"
+      rect:
+        serializedVersion: 2
+        x: 615
+        y: 843
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a550c88cf88639b40800000000000000
+      internalID: 5445811341175293274
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "C\xF3pia de Algas_9"
+      rect:
+        serializedVersion: 2
+        x: 802
+        y: 821
+        width: 52
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7a754d949b9ecab90800000000000000
+      internalID: -7229146319819614297
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "C\xF3pia de Algas_10"
+      rect:
+        serializedVersion: 2
+        x: 866
+        y: 812
+        width: 45
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 14d374c129a343830800000000000000
+      internalID: 4049926364126985537
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "C\xF3pia de Algas_11"
+      rect:
+        serializedVersion: 2
+        x: 1196
+        y: 805
+        width: 47
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cbe4a317c73b14bb0800000000000000
+      internalID: -4953480768073871684
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "C\xF3pia de Algas_12"
+      rect:
+        serializedVersion: 2
+        x: 550
+        y: 785
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a5e99b1a0593fffa0800000000000000
+      internalID: -5764825979537482150
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "C\xF3pia de Algas_13"
+      rect:
+        serializedVersion: 2
+        x: 598
+        y: 772
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4fe080b5fce4a2ac0800000000000000
+      internalID: -3879201476533809420
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "C\xF3pia de Algas_14"
+      rect:
+        serializedVersion: 2
+        x: 841
+        y: 773
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8abad61f292d0bfe0800000000000000
+      internalID: -1175207974186144856
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "C\xF3pia de Algas_15"
+      rect:
+        serializedVersion: 2
+        x: 1117
+        y: 747
+        width: 60
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 19d23b93d167f5190800000000000000
+      internalID: -7971522947528315503
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "C\xF3pia de Algas_16"
+      rect:
+        serializedVersion: 2
+        x: 872
+        y: 746
+        width: 27
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a40baf9d0f8548100800000000000000
+      internalID: 109310082436214858
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "C\xF3pia de Algas_17"
+      rect:
+        serializedVersion: 2
+        x: 1205
+        y: 723
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a36e461f2ce4706a0800000000000000
+      internalID: -6483126539395996102
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "C\xF3pia de Algas_18"
+      rect:
+        serializedVersion: 2
+        x: 91
+        y: 624
+        width: 52
+        height: 117
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 06caf2cab3fd79cc0800000000000000
+      internalID: -3704246721104073632
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "C\xF3pia de Algas_19"
+      rect:
+        serializedVersion: 2
+        x: 860
+        y: 716
+        width: 22
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ba5cdba2958f56750800000000000000
+      internalID: 6297712715800364459
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "C\xF3pia de Algas_20"
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 107
+        width: 250
+        height: 434
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8d38393acea856900800000000000000
+      internalID: 677100067950396376
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "C\xF3pia de Algas_21"
+      rect:
+        serializedVersion: 2
+        x: 368
+        y: 115
+        width: 250
+        height: 434
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9e9003a1ac2fa87a0800000000000000
+      internalID: -6374015372752844311
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "C\xF3pia de Algas_22"
+      rect:
+        serializedVersion: 2
+        x: 757
+        y: 134
+        width: 181
+        height: 434
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 034603126fdfa5400800000000000000
+      internalID: 313842357616272432
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "C\xF3pia de Algas_23"
+      rect:
+        serializedVersion: 2
+        x: 1079
+        y: 137
+        width: 217
+        height: 432
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fa09ad4e06feca6a0800000000000000
+      internalID: -6436506567983853393
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "C\xF3pia de Algas_24"
+      rect:
+        serializedVersion: 2
+        x: 1490
+        y: 167
+        width: 181
+        height: 434
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 78024ab8912df9d80800000000000000
+      internalID: -8241637785905913721
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "C\xF3pia de Algas_25"
+      rect:
+        serializedVersion: 2
+        x: 1726
+        y: 367
+        width: 194
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5fd94b7805d6348c0800000000000000
+      internalID: -4016246250042778123
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      "C\xF3pia de Algas_0": 7317239116197061770
+      "C\xF3pia de Algas_1": -5351545191937306386
+      "C\xF3pia de Algas_10": 4049926364126985537
+      "C\xF3pia de Algas_11": -4953480768073871684
+      "C\xF3pia de Algas_12": -5764825979537482150
+      "C\xF3pia de Algas_13": -3879201476533809420
+      "C\xF3pia de Algas_14": -1175207974186144856
+      "C\xF3pia de Algas_15": -7971522947528315503
+      "C\xF3pia de Algas_16": 109310082436214858
+      "C\xF3pia de Algas_17": -6483126539395996102
+      "C\xF3pia de Algas_18": -3704246721104073632
+      "C\xF3pia de Algas_19": 6297712715800364459
+      "C\xF3pia de Algas_2": 7645198511599513276
+      "C\xF3pia de Algas_20": 677100067950396376
+      "C\xF3pia de Algas_21": -6374015372752844311
+      "C\xF3pia de Algas_22": 313842357616272432
+      "C\xF3pia de Algas_23": -6436506567983853393
+      "C\xF3pia de Algas_24": -8241637785905913721
+      "C\xF3pia de Algas_25": -4016246250042778123
+      "C\xF3pia de Algas_3": -2856625809782527556
+      "C\xF3pia de Algas_4": 5317307930999088721
+      "C\xF3pia de Algas_5": 7868406919218394771
+      "C\xF3pia de Algas_6": -8810849094666190449
+      "C\xF3pia de Algas_7": 2107781902683143446
+      "C\xF3pia de Algas_8": 5445811341175293274
+      "C\xF3pia de Algas_9": -7229146319819614297
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
