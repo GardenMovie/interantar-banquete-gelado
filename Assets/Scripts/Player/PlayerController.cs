@@ -66,15 +66,15 @@ public class PlayerController : MonoBehaviour
         {
             if (state == 1)
             {
-                animatorController.Play("AdeliaNadoAnim");
+                animatorController.Play("swim", 0);
                 spriteRenderer.flipY = true;
-                spriteRenderer.sortingOrder = -2;
+                spriteRenderer.sortingOrder = 0;
                 return;
             }
             else
             {
                 spriteRenderer.sortingOrder = 3;
-                animatorController.Play("AdeliaWalkAnim");
+                animatorController.Play("walk", 0);
                 spriteRenderer.flipY = false;
             }
         }
@@ -85,7 +85,7 @@ public class PlayerController : MonoBehaviour
                 animatorController.StopPlayback();
                 return;
             }
-            animatorController.Play("AdeliaStand");
+            animatorController.Play("idle");
         }
         } 
 

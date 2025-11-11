@@ -7,11 +7,12 @@ public class animatorChooser : MonoBehaviour
     // inspector-assigned list of animator controllers
     public RuntimeAnimatorController[] animatorControllers;
 
+    int index = GameManager.Instance.characterChoice;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         PlayerAnimator = GetComponent<Animator>();
-        index = GameManager.instance.selectedCharacterAnimator;
 
         // expects GameManager.selectedCharacterAnimator to be an int index
 
