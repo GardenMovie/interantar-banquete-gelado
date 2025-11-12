@@ -10,15 +10,16 @@ public class PlayerController : MonoBehaviour
 {
     private Vector2 moveInput = new Vector2(0,0);
     public float moveSpeed = 5f;
-    public bool Strong = false;
+    public bool FastSwim = false;
     public int offangle = -180;
 
     private Rigidbody2D rb;
     private SpriteRenderer spriteRenderer;
-    private BoxCollider2D boxCollider2D;
     private Animator animatorController;
     public Tilemap groundTilemap;
     public Tilemap waterTilemap;
+    private CapsuleCollider2D PlayerHitbox;
+    private Vector2 OriginalSize;
 
     private int state = 0;
 
@@ -27,7 +28,8 @@ public class PlayerController : MonoBehaviour
         animatorController = GetComponent<Animator>();
         rb = GetComponent<Rigidbody2D>();
         spriteRenderer = GetComponent<SpriteRenderer>();
-        boxCollider2D = GetComponent<BoxCollider2D>();
+        PlayerHitbox = GetComponent<CapsuleCollider2D>();
+        OriginalSize = PlayerHitbox.size;
     }
 
     void Update()
@@ -69,6 +71,10 @@ public class PlayerController : MonoBehaviour
                 animatorController.Play("swim", 0);
                 spriteRenderer.flipY = true;
                 spriteRenderer.sortingOrder = 0;
+                // CapsuleCollider2D.size = Vector2(CapsuleCollider2D.size.x, CapsuleCollider2D.size.y * 2);
+                PlayerHitbox = PlayerHitbox ?? GetComponent<CapsuleCollider2D>();
+                if (PlayerHitbox != null)
+                    PlayerHitbox.size = new Vector2(OriginalSize.x, OriginalSize.y * 2);
                 return;
             }
             else
@@ -76,6 +82,7 @@ public class PlayerController : MonoBehaviour
                 spriteRenderer.sortingOrder = 3;
                 animatorController.Play("walk", 0);
                 spriteRenderer.flipY = false;
+                PlayerHitbox.size = new Vector2(OriginalSize.x, OriginalSize.y);
             }
         }
         else
@@ -86,6 +93,7 @@ public class PlayerController : MonoBehaviour
                 return;
             }
             animatorController.Play("idle");
+            PlayerHitbox.size = new Vector2(OriginalSize.x, OriginalSize.y);
         }
         } 
 
@@ -96,14 +104,14 @@ public class PlayerController : MonoBehaviour
         {
             case 1:
                 spriteRenderer.color = Color.red;
-                Strong = true;
+                FastSwim = false;
                 // boxCollider2D.size = new Vector2 (1.5f,1.5f);
                 gameObject.transform.localScale = new Vector3(0.5f,0.5f,0.5f);
                 break;
 
             case 2:
                 spriteRenderer.color = Color.blue;
-                Strong = false;
+                FastSwim = false;
                 // boxCollider2D.size = new Vector2 (1,1);
                 gameObject.transform.localScale = new Vector3(0.5f,0.5f,0.5f);
                 break;
@@ -113,7 +121,7 @@ public class PlayerController : MonoBehaviour
 
             default:
                 spriteRenderer.color = Color.green;
-                Strong = false;
+                FastSwim = true;
                 // boxCollider2D.size = new Vector2 (1,1);
                 gameObject.transform.localScale = new Vector3(0.25f,0.25f,0.25f);
                 break;
