@@ -1,3 +1,4 @@
+using System.Numerics;
 using UnityEngine;
 
 public class animatorChooser : MonoBehaviour
@@ -12,11 +13,11 @@ public class animatorChooser : MonoBehaviour
 
     // moved PlayerStats fields here (set 3 values in inspector)
     [Header("Hitbox sizes per character")]
-    public Vector2[] hitboxSizes = new Vector2[3];
+    public UnityEngine.Vector2[] hitboxSizes = new UnityEngine.Vector2[3];
 
     // current hitbox size (kept in sync)
     [HideInInspector]
-    public Vector2 hitboxSize = new Vector2(1f, 1f);
+    public UnityEngine.Vector2 hitboxSize = new UnityEngine.Vector2(1f, 1f);
 
     int index;
 
@@ -51,7 +52,7 @@ public class animatorChooser : MonoBehaviour
         // Prefer direct array values if available
         if (hitboxSizes != null && index >= 0 && index < hitboxSizes.Length)
         {
-            Vector2 size = hitboxSizes[index];
+            UnityEngine.Vector2 size = hitboxSizes[index];
             PlayerHitbox = PlayerHitbox ?? GetComponent<CapsuleCollider2D>();
             if (PlayerHitbox != null)
                 PlayerHitbox.size = size;
