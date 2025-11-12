@@ -2363,6 +2363,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: pauseButton
       objectReference: {fileID: 0}
+    - target: {fileID: 5047646349351529071, guid: 756fd1d78949780459be121a20fd498a, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6517387539380458732, guid: 756fd1d78949780459be121a20fd498a, type: 3}
       propertyPath: pauseMenuUI
       value: 

@@ -25,8 +25,10 @@ public class GameManager : MonoBehaviour
 
     [Header("Game Values")]
     public int score;
+    public int MaxScore = 24;
     public bool debugMode = false;
     public int globeTargetIndex = -1;
+    public bool isPaused = false;
 
     [Header("Player Settings")]
     public int health = 3;
@@ -90,8 +92,8 @@ public class GameManager : MonoBehaviour
 
     public void ChangeScene(string nomeCena)
     {
-        // SceneManager.LoadScene(nomeCena);
-        StartCoroutine(ChangeSceneTransition(nomeCena));
+        SceneManager.LoadScene(nomeCena);
+        // StartCoroutine(ChangeSceneTransition(nomeCena));
     }
 
     System.Collections.IEnumerator ChangeSceneTransition(string nomeCena)
@@ -128,7 +130,7 @@ public class GameManager : MonoBehaviour
     public void AddScore(int Value)
     {
         score += Value;
-        if (score >= 10)
+        if (score >= MaxScore)
         {
             ChangeScene("FinalMenu");
         }

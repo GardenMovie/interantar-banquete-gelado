@@ -70,7 +70,7 @@ public class PlayerController : MonoBehaviour
             {
                 animatorController.Play("swim", 0);
                 spriteRenderer.flipY = true;
-                spriteRenderer.sortingOrder = 0;
+                spriteRenderer.sortingOrder = -1;
                 // CapsuleCollider2D.size = Vector2(CapsuleCollider2D.size.x, CapsuleCollider2D.size.y * 2);
                 PlayerHitbox = PlayerHitbox ?? GetComponent<CapsuleCollider2D>();
                 if (PlayerHitbox != null)
