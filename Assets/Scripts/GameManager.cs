@@ -26,15 +26,20 @@ public class GameManager : MonoBehaviour
     [Header("Game Values")]
     public int score;
     public bool debugMode = false;
+    public int globeTargetIndex = -1;
+
+    [Header("Player Settings")]
+    public int health = 3;
     public int characterChoice = 0;
 
-    public int globeTargetIndex = -1;
-    public int charChose = 0;
+    // cooldown between AddHealth calls (seconds)
+    public float healthCooldown = 1f;
+    private float nextHealthTime = 0f;
 
+    [Header("Performance Settings")]
     public int targetFrameRate = 60;
     public int vsyncEnable = 1;
 
-    public int health = 3;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Awake()
@@ -108,11 +113,16 @@ public class GameManager : MonoBehaviour
 
     public void AddHealth(int Value)
     {
+        // enforce cooldown
+        UnityEngine.Debug.Log("Called");
+        if (Time.time < nextHealthTime) return;
+        nextHealthTime = Time.time + healthCooldown;
+
         health += Value;
         OnHealthChanged?.Invoke(health);
         if (health <= 0)
         {
-            ChangeScene("FinalMenu");
+            ChangeScene("FailMenu");
         }
     }
     public void AddScore(int Value)

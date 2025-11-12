@@ -47,4 +47,5 @@ public class PatrolEnemy : MonoBehaviour
             patrolSection = (patrolSection == patrolPoints.Count - 1) ? 0 : patrolSection + 1;
         }
     }
+
 }
