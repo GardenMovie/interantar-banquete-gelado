@@ -141,6 +141,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   valueScore: 1
+  valueType: 1
   requireStrong: 0
 --- !u!114 &7419523648096006710
 MonoBehaviour:
@@ -155,6 +156,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 5
+  rotateTowards: 1
 --- !u!50 &5589147046131524761
 Rigidbody2D:
   serializedVersion: 5

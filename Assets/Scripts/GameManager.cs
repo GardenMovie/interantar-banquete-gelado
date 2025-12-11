@@ -25,7 +25,17 @@ public class GameManager : MonoBehaviour
 
     [Header("Game Values")]
     public int score;
-    public int MaxScore = 24;
+    public int MaxScore;
+
+    public int FishScore;
+    public int MaxFishScore = 15;
+
+    public int KrillScore;
+    public int MaxKrillScore = 3;
+
+    public int SquidScore;
+    public int MaxSquidScore = 8;
+
     public bool debugMode = false;
     public int globeTargetIndex = -1;
     public bool isPaused = false;
@@ -88,6 +98,7 @@ public class GameManager : MonoBehaviour
     void Start()
     {
         score = 0;
+        MaxScore = MaxFishScore + MaxKrillScore + MaxSquidScore;
     }
 
     public void ChangeScene(string nomeCena)
@@ -127,9 +138,23 @@ public class GameManager : MonoBehaviour
             ChangeScene("FailMenu");
         }
     }
-    public void AddScore(int Value)
+    public void AddScore(int Value, int Type)
     {
         score += Value;
+        switch (Type)
+        {
+            case 0:
+                KrillScore += Value;
+                break;
+            case 1:
+                FishScore += Value;
+                break;
+            case 2:
+                SquidScore += Value;
+                break;
+            default:
+                return;
+        }
         if (score >= MaxScore)
         {
             ChangeScene("FinalMenu");

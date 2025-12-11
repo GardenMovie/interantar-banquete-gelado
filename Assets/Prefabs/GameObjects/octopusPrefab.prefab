@@ -141,6 +141,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   valueScore: 1
+  valueType: 2
   requireStrong: 0
 --- !u!114 &7419523648096006710
 MonoBehaviour:

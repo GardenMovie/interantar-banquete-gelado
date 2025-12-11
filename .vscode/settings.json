@@ -66,5 +66,5 @@
     "explorer.fileNesting.patterns": {
         "*.sln": "*.csproj"
     },
-    "dotnet.defaultSolution": "banquete-gelado.slnx"
+    "dotnet.defaultSolution": "interantar-banquete-gelado.slnx"
 }
