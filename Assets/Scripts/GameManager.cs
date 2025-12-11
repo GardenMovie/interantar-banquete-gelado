@@ -36,6 +36,9 @@ public class GameManager : MonoBehaviour
     public int SquidScore;
     public int MaxSquidScore = 8;
 
+    public bool Finished = false;
+    public GameObject FinishedText;
+
     public bool debugMode = false;
     public int globeTargetIndex = -1;
     public bool isPaused = false;
@@ -65,12 +68,6 @@ public class GameManager : MonoBehaviour
         {
             Destroy(gameObject);
         }
-        if (soundOn == true)
-        {
-            MusicSource.clip = backgroundMusic;
-
-            MusicSource.Play();
-        }
 
         Application.targetFrameRate = targetFrameRate;
         QualitySettings.vSyncCount = vsyncEnable;
@@ -78,8 +75,13 @@ public class GameManager : MonoBehaviour
 
     void OnSceneLoaded(Scene scene, LoadSceneMode mode)
     {
-
+        if (soundOn && scene.name == "PlayAreaTest")
+        {
+            MusicSource.clip = backgroundMusic;
+            MusicSource.Play();
+        }
     }
+
     void OnEnable()
     {
         SceneManager.sceneLoaded += OnSceneLoaded;
@@ -138,6 +140,7 @@ public class GameManager : MonoBehaviour
             ChangeScene("FailMenu");
         }
     }
+
     public void AddScore(int Value, int Type)
     {
         score += Value;
@@ -157,7 +160,7 @@ public class GameManager : MonoBehaviour
         }
         if (score >= MaxScore)
         {
-            ChangeScene("FinalMenu");
+            Finished = true;
         }
     }
 
