@@ -101,6 +101,7 @@ public class legendaAnimada : MonoBehaviour
 
             // yield return new WaitUntil(() => waitingForInput == false);
             GameManager.Instance.incrementIndex();
+            yield return new WaitForSeconds(2f);
             currentPhraseIndex++;
             waitingForInput = true;
         }
