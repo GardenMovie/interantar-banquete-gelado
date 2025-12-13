@@ -20936,7 +20936,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5492552726626838154, guid: 17ed02d71cfb8c24aa254204f1a43770, type: 3}
       propertyPath: characterChoice
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -22310,11 +22310,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3002527085502928331, guid: b3d80041cfa52d9488be614de0cbb250, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 609
+      value: 729.5
       objectReference: {fileID: 0}
     - target: {fileID: 3002527085502928331, guid: b3d80041cfa52d9488be614de0cbb250, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -455.5
+      value: -353
       objectReference: {fileID: 0}
     - target: {fileID: 3179968055385905170, guid: b3d80041cfa52d9488be614de0cbb250, type: 3}
       propertyPath: m_AnchorMax.y
@@ -57314,9 +57314,9 @@ RectTransform:
   - {fileID: 1164934803}
   - {fileID: 386613027}
   - {fileID: 1201557983}
-  - {fileID: 2116078990}
   - {fileID: 1566983237}
   - {fileID: 134104588}
+  - {fileID: 2116078990}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -72336,6 +72336,10 @@ PrefabInstance:
       propertyPath: targetObject
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 8967726332509906642, guid: 2e3917653d9886c4b9928331b960f29b, type: 3}
+      propertyPath: globalTargetSet
+      value: -1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -73191,12 +73195,12 @@ SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
   - {fileID: 619394802}
+  - {fileID: 1561765118}
   - {fileID: 179863993}
   - {fileID: 3827784404267740578}
   - {fileID: 1976341071}
   - {fileID: 1551452040}
   - {fileID: 1786792404}
-  - {fileID: 1561765118}
   - {fileID: 1938026646}
   - {fileID: 519420032}
   - {fileID: 1661164123}

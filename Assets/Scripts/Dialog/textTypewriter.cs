@@ -99,7 +99,7 @@ public class legendaAnimada : MonoBehaviour
                 EraseTextImmediately();
             } */
 
-            yield return new WaitUntil(() => waitingForInput == false);
+            // yield return new WaitUntil(() => waitingForInput == false);
             GameManager.Instance.incrementIndex();
             currentPhraseIndex++;
             waitingForInput = true;

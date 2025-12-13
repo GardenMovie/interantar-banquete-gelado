@@ -37,7 +37,7 @@ public class animatorChooser : MonoBehaviour
         if (animatorControllers != null && index >= 0 && index < animatorControllers.Length)
         {
             if (index == 1) GameManager.Instance.AddHealth(2);
-            if (index == 2) PlayerController.moveSpeed = 7;
+            if (index == 2) PlayerController.FastSwimCoef = 2;
             PlayerAnimator.runtimeAnimatorController = animatorControllers[index];
             CharStatsUpdate(index);
         }

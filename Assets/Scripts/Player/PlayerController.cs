@@ -10,7 +10,8 @@ public class PlayerController : MonoBehaviour
 {
     private Vector2 moveInput = new Vector2(0,0);
     public float moveSpeed = 5f;
-    public bool FastSwim = false;
+    public int FastSwim = 0;
+    public int FastSwimCoef = 0;
     public int offangle = -180;
 
     private Rigidbody2D rb;
@@ -38,37 +39,12 @@ public class PlayerController : MonoBehaviour
 
         state = groundTilemap.HasTile(cellPosition) ? 0 : 1 ;
 
-        // Check if there's a tile in water
-       if (Keyboard.current.digit2Key.wasPressedThisFrame)
-        {
-            // ChangePlayerChar(1);
-            state = 0;
-        }
-        if (Keyboard.current.digit1Key.wasPressedThisFrame)
-        {
-            // ChangePlayerChar(1);
-            state = 1;
-        }
-            if (Keyboard.current.digit3Key.wasPressedThisFrame)
-        {
-            // ChangePlayerChar(1);
-            GameManager.Instance.AddHealth(-1);
-        }   // else if (Keyboard.current.digit2Key.wasPressedThisFrame)
-        // {
-        //     ChangePlayerChar(2);
-        // }
-        // else if (Keyboard.current.digit3Key.wasPressedThisFrame)
-        // {
-        //     ChangePlayerChar(3);
-        // }
-        // else if (Keyboard.current.digit4Key.wasPressedThisFrame)
-        // {
-        //     ChangePlayerChar(4);}
         if (moveInput != new Vector2(0, 0))
         {
             if (state == 1)
             {
                 animatorController.Play("swim", 0);
+                FastSwim = 1;
                 spriteRenderer.flipY = true;
                 spriteRenderer.sortingOrder = -1;
                 // CapsuleCollider2D.size = Vector2(CapsuleCollider2D.size.x, CapsuleCollider2D.size.y * 2);
@@ -79,6 +55,7 @@ public class PlayerController : MonoBehaviour
             }
             else
             {
+                FastSwim = 0;
                 spriteRenderer.sortingOrder = 3;
                 animatorController.Play("walk", 0);
                 spriteRenderer.flipY = false;
@@ -98,37 +75,6 @@ public class PlayerController : MonoBehaviour
         } 
 
 
-    void ChangePlayerChar(int Char)
-    {
-        switch (Char)
-        {
-            case 1:
-                spriteRenderer.color = Color.red;
-                FastSwim = false;
-                // boxCollider2D.size = new Vector2 (1.5f,1.5f);
-                gameObject.transform.localScale = new Vector3(0.5f,0.5f,0.5f);
-                break;
-
-            case 2:
-                spriteRenderer.color = Color.blue;
-                FastSwim = false;
-                // boxCollider2D.size = new Vector2 (1,1);
-                gameObject.transform.localScale = new Vector3(0.5f,0.5f,0.5f);
-                break;
-            case 4:
-                GameManager.Instance.ChangeScene("FinalMenu");
-                break;
-
-            default:
-                spriteRenderer.color = Color.green;
-                FastSwim = true;
-                // boxCollider2D.size = new Vector2 (1,1);
-                gameObject.transform.localScale = new Vector3(0.25f,0.25f,0.25f);
-                break;
-        }
-    }
-
-
     // Called by Input System
     public void SetMoveInput(InputAction.CallbackContext context)
     {
@@ -143,7 +89,7 @@ public class PlayerController : MonoBehaviour
         {
             transform.rotation = Quaternion.Euler(0, 0, angle-offangle);
         }
-        Vector2 movement = moveInput * moveSpeed;
+        Vector2 movement = moveInput * (moveSpeed + (FastSwim * FastSwimCoef));
         Vector2 newPosition = rb.position + movement * Time.fixedDeltaTime;
         rb.MovePosition(newPosition);
     }
