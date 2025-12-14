@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using Random = UnityEngine.Random;
 
 public class GameManager : MonoBehaviour
 {
@@ -119,9 +120,10 @@ public class GameManager : MonoBehaviour
     }
 
 
-    public void PlaySFX(AudioClip clip)
+    public void PlaySFX(AudioClip clip, float volume = 1f)
     {
-        SFXSource.PlayOneShot(clip);
+        SFXSource.pitch = Random.Range(0.9f,1.1f);
+        SFXSource.PlayOneShot(clip, volume);
     }
     
     public event Action<int> OnHealthChanged;

@@ -2,6 +2,7 @@ using UnityEngine;
 
 public class CollectOnTouch : MonoBehaviour
 {
+    public AudioClip eatSound;
     public int valueScore = 1;
     public int valueType = 0;
     public bool requireStrong = false;
@@ -11,6 +12,7 @@ public class CollectOnTouch : MonoBehaviour
         if (collision.gameObject.GetComponent<PlayerController>())
         {
             GameManager.Instance.AddScore(valueScore, valueType);
+            GameManager.Instance.PlaySFX(eatSound,0.4f);
             Destroy(gameObject);
         }
     }

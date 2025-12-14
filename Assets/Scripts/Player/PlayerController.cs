@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.Tilemaps;
@@ -8,6 +9,12 @@ using Vector3 = UnityEngine.Vector3;
 [RequireComponent(typeof(Rigidbody2D))]
 public class PlayerController : MonoBehaviour
 {
+    public AudioClip walkSound;
+    public float stepDelay = 0.5f;
+    public float stepVolume = 0.3f;
+    private Coroutine repeatedSFX;
+    private bool isPlayingSFX = false;
+
     private Vector2 moveInput = new Vector2(0,0);
     public float moveSpeed = 5f;
     public int FastSwim = 0;
@@ -43,6 +50,11 @@ public class PlayerController : MonoBehaviour
         {
             if (state == 1)
             {
+                if(isPlayingSFX)
+                {
+                    StopCoroutine(repeatedSFX);
+                    isPlayingSFX = false;
+                }
                 animatorController.Play("swim", 0);
                 FastSwim = 1;
                 spriteRenderer.flipY = true;
@@ -58,12 +70,23 @@ public class PlayerController : MonoBehaviour
                 FastSwim = 0;
                 spriteRenderer.sortingOrder = 3;
                 animatorController.Play("walk", 0);
+                if (!isPlayingSFX)
+                {
+                    repeatedSFX = StartCoroutine(PlaySFXRepeated(walkSound,stepDelay));
+                    isPlayingSFX = true;
+                }
                 spriteRenderer.flipY = false;
                 PlayerHitbox.size = new Vector2(OriginalSize.x, OriginalSize.y);
+                return;
             }
         }
         else
         {
+            if(isPlayingSFX)
+            {
+                StopCoroutine(repeatedSFX);
+                isPlayingSFX = false;
+            }
             if (state == 1)
             {
                 animatorController.StopPlayback();
@@ -74,6 +97,14 @@ public class PlayerController : MonoBehaviour
         }
         } 
 
+    public IEnumerator PlaySFXRepeated(AudioClip myClip, float delay)
+    {
+        while (true)
+        {
+            GameManager.Instance.PlaySFX(myClip, stepVolume);
+            yield return new WaitForSeconds(delay);
+        }
+    }
 
     // Called by Input System
     public void SetMoveInput(InputAction.CallbackContext context)
