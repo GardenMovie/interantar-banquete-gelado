@@ -9,7 +9,7 @@ Material:
   m_PrefabAsset: {fileID: 0}
   m_Name: Poppins-Medium SDF Material
   m_Shader: {fileID: 4800000, guid: 68e6db2ebdc24f95958faec2be5558d6, type: 3}
-  m_Parent: {fileID: 7244128505161037600, guid: 658857f963fe7c54d80316cb352971e4, type: 2}
+  m_Parent: {fileID: -9181122809482665498, guid: 52deffacc1962b91f8dd5f88fce4d590, type: 2}
   m_ModifiedSerializedProperties: 0
   m_ValidKeywords: []
   m_InvalidKeywords: []
@@ -32,8 +32,8 @@ Material:
     - _GradientScale: 5
     - _OutlineWidth: 0.2
     - _ScaleRatioA: 0.8
-    - _ScaleRatioB: 0.7
-    - _ScaleRatioC: 0.7
+    - _ScaleRatioB: 0.65
+    - _ScaleRatioC: 0.65
     m_Colors:
     - _FaceColor: {r: 0, g: 0.6156863, b: 1, a: 1}
     - _OutlineColor: {r: 0.5529412, g: 0.827451, b: 1, a: 1}
@@ -50,7 +50,7 @@ Texture2D:
     serializedVersion: 2
     Hash: 00000000000000000000000000000000
   m_IsAlphaChannelOptional: 0
-  serializedVersion: 3
+  serializedVersion: 4
   m_Width: 512
   m_Height: 512
   m_CompleteImageSize: 262144

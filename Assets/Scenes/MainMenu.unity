@@ -437,6 +437,7 @@ MonoBehaviour:
   m_VerticalAlignment: 512
   m_textAlignment: 65535
   m_characterSpacing: 0
+  m_characterHorizontalScale: 1
   m_wordSpacing: 0
   m_lineSpacing: 0
   m_lineSpacingMax: 0
@@ -561,7 +562,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2974837333917209679, guid: 2e3917653d9886c4b9928331b960f29b, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 223.81
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2974837333917209679, guid: 2e3917653d9886c4b9928331b960f29b, type: 3}
       propertyPath: m_AnchoredPosition.x
@@ -1050,7 +1051,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4189639623305656006, guid: 9b7d11052cf9b7d4baadfac6d5486f51, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 5.7940063
+      value: 5.7939453
       objectReference: {fileID: 0}
     - target: {fileID: 4189639623305656006, guid: 9b7d11052cf9b7d4baadfac6d5486f51, type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -1551,7 +1552,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2974837333917209679, guid: 2e3917653d9886c4b9928331b960f29b, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 144.46
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2974837333917209679, guid: 2e3917653d9886c4b9928331b960f29b, type: 3}
       propertyPath: m_AnchoredPosition.x
@@ -1711,7 +1712,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -2.4505005, y: -4.3587036}
+  m_AnchoredPosition: {x: -2.4504395, y: -4.3586426}
   m_SizeDelta: {x: 69.3148, y: 43.0454}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1415600522
@@ -1953,7 +1954,6 @@ MonoBehaviour:
   m_ScreenCoordScaleBias: {x: 0, y: 0, z: 0, w: 0}
   m_RequiresDepthTexture: 0
   m_RequiresColorTexture: 0
-  m_Version: 2
   m_TaaSettings:
     m_Quality: 3
     m_FrameInfluence: 0.1
@@ -1961,6 +1961,7 @@ MonoBehaviour:
     m_MipBias: 0
     m_VarianceClampScale: 0.9
     m_ContrastAdaptiveSharpening: 0
+  m_Version: 2
 --- !u!1001 &2111736569
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1987,7 +1988,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2974837333917209679, guid: 2e3917653d9886c4b9928331b960f29b, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 320.68
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2974837333917209679, guid: 2e3917653d9886c4b9928331b960f29b, type: 3}
       propertyPath: m_AnchoredPosition.x
@@ -2194,6 +2195,7 @@ MonoBehaviour:
   m_VerticalAlignment: 512
   m_textAlignment: 65535
   m_characterSpacing: 0
+  m_characterHorizontalScale: 1
   m_wordSpacing: 0
   m_lineSpacing: 0
   m_lineSpacingMax: 0
